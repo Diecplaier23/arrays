@@ -2,11 +2,10 @@ import java.util.Scanner;
 
 public class Ejercicio10 {
     public static void main(String[] args) {
-        String string;
         int posicion = 0;
         int a[]=new int[10];
         Scanner sc = new Scanner(System.in);
-        System.out.println("Introduce los valores que quieras");
+        System.out.println("Introduce 10 valores que quieras");
         for (int i = 0; i < 10; i++) {
             a[i]= sc.nextInt();
         }
