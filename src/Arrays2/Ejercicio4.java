@@ -1,9 +1,8 @@
-```java
 package Arrays2;
 
 import java.util.Scanner;
 
-public class Eliminar {
+public class Ejercicio4 {
     public static final String ROJO = "\u001B[31m";
     public static final String VERDE = "\u001B[32m";
     public static final String BLANCO = "\u001B[97m";

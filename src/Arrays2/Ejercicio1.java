@@ -1,4 +1,3 @@
-```java
 package Arrays2;
 
 import java.util.Scanner;
@@ -53,4 +52,4 @@ public class Ejercicio1 {
         sc.close();
     }
 }
-```
+
