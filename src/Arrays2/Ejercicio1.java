@@ -33,18 +33,16 @@ public class Ejercicio1 {
             for (int j = 0; j < i; j++) {
                 if (a[i] == a[j]) {
                     duplicado = true;
-                    break;
                 }
             }
 
             if (duplicado) {
-                continue;
+
             }
 
             for (int j = i + 1; j < cantidad; j++) {
                 if (a[i] == a[j]) {
                     System.out.println(R + a[i] + RS);
-                    break;
                 }
             }
         }
