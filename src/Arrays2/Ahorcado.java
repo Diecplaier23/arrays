@@ -49,6 +49,7 @@ public class Ahorcado {
             String imput = sc.nextLine();
             if (imput.equals(palabra)) {
                 System.out.println(V + "Has acertado la palabra, en hora buena" + RS);
+                break;
             }else if (imput.length() != 1 && Character.isLetter(imput.charAt(0))){
                 System.out.println(R + "Error: Introduce solo una letra" + RS);
             } else if (!Character.isLetter(imput.charAt(0))) {
