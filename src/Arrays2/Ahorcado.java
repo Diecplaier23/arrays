@@ -35,6 +35,7 @@ public class Ahorcado {
         int intentos=0;
         int intentos_restantes = DIBUJOS.length-1;
         int aparece=0;
+        boolean win = false;
         String palabra = toas_palabras[palabra_aleaotria];
         char[] letras = palabra.toCharArray();
         char[] caracteres = new char[letras.length];
@@ -47,8 +48,9 @@ public class Ahorcado {
         do {
             System.out.println("Introduce una letra, o si la conoces la palabra correcta: ");
             String imput = sc.nextLine();
-            if (imput.equals(palabra)) {
+            if (imput.equals(palabra) || Arrays.equals(caracteres, palabra.toCharArray())) {
                 System.out.println(V + "Has acertado la palabra, en hora buena" + RS);
+                win = true;
                 break;
             }else if (imput.length() != 1 && Character.isLetter(imput.charAt(0))){
                 System.out.println(R + "Error: Introduce solo una letra" + RS);
@@ -79,8 +81,10 @@ public class Ahorcado {
                 }
             }
         } while (intentos < intentos_restantes);
-        System.out.print("\n");
-        System.out.print(R+"Has perdido :("+RS+"\n");
-        System.out.print(V+"La palabra era "+palabra+RS+"\n");
+        if (win=true){
+            System.out.print(V+"Has ganado :)"+RS+"\n");
+        }else{System.out.print("\n");
+            System.out.print(R+"Has perdido :("+RS+"\n");
+            System.out.print(V+"La palabra era "+palabra+RS+"\n");}
     }
 }
