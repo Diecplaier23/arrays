@@ -83,7 +83,8 @@ public class Ahorcado {
         } while (intentos < intentos_restantes);
         if (win=true){
             System.out.print(V+"Has ganado :)"+RS+"\n");
-        }else{System.out.print("\n");
+        }else{
+            System.out.print("\n");
             System.out.print(R+"Has perdido :("+RS+"\n");
             System.out.print(V+"La palabra era "+palabra+RS+"\n");}
     }
